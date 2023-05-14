@@ -1,0 +1,576 @@
+/* start global varybls */
+:root {
+    --manin-color: #ffe500;
+}
+
+/* end global varybls */
+
+/* Start Global Rules  */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.parent {
+    background-color: #eee;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto;
+}
+
+/* small*/
+@media(min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium */
+
+@media(min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large */
+/* @media(min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+} */
+
+/* End Global Rules */
+/* start header */
+.header .main-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.header .main-header img {
+    width: 100px;
+    margin-top: 10px;
+    background-color: var(--manin-color);
+    border-radius: 10px;
+}
+
+.header .main-header svg {
+    margin-top: 15px;
+    color: var(--manin-color);
+    font-size: 20px;
+}
+
+.header {
+    background-image: url("/imge/airplane-g1958c4ad8_1920.jpg");
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.header .container .text {
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header .container .text h3 {
+    word-spacing: 10px;
+    letter-spacing: 6px;
+    font-size: 20px;
+}
+
+.header .container .text p {
+    word-spacing: 4px;
+    letter-spacing: 3px;
+}
+
+@media(max-width:768px) {
+    .header .container .text h3 {
+        font-size: 15px;
+    }
+
+    .header .container .text p {
+        font-size: 10px;
+    }
+}
+
+.header .container .text a {
+    display: inline-block;
+    background-color: var(--manin-color);
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 50px;
+    color: black;
+}
+
+.header .down {
+    position: absolute;
+    bottom: 15px;
+    left: calc(50% - 35px);
+
+}
+
+.header .down svg {
+    color: var(--manin-color);
+    width: 100%;
+}
+
+.header .down svg:first-child {
+    margin-bottom: -21px;
+    font-size: 25px;
+}
+
+.header .down svg:last-child {
+    font-size: 30px;
+}
+
+/* start landing */
+.landing .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.landing .container img {
+    margin: 30px auto;
+    max-width: 100%;
+
+}
+
+.landing .container .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.landing .container .info p {
+    text-align: center;
+    max-width: 50%;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #777;
+}
+
+@media(max-width:768px) {
+    .landing .container .info p {
+
+        font-size: 7px;
+    }
+
+    .landing .container img {
+        max-width: 40%;
+    }
+}
+
+/* end landing */
+/* start services */
+.services {
+    background-color: #eee;
+}
+
+/* .services .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+} */
+.speciale-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.speciale-logo img {
+    margin-top: 37px;
+    margin-bottom: 37px;
+    width: 70px;
+}
+
+.speciale-heading {
+    width: 100%;
+    text-align: center;
+    color: #777;
+    letter-spacing: 10px;
+    word-spacing: 3px;
+    margin-top: 0;
+}
+
+.speciale-heading+p {
+    color: #777;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 70%;
+    font-size: 10px;
+    margin: 0px auto;
+
+}
+
+.services .container .services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.services .container .services-content .col .serv {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+}
+
+.services .container .services-content .col .serv svg {
+    color: var(--manin-color);
+    font-size: 38px;
+}
+
+.services .container .services-content .col .serv h4 {
+    font-size: 14px;
+    color: #777;
+}
+
+.services .container .services-content .col .serv p {
+    font-size: 12px;
+    color: #777;
+}
+
+.services .container .services-content .col .exper {
+    background-color: white;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.services .container .services-content .col .exper hr {
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--manin-color);
+    display: inline-block;
+}
+
+.ps,
+.respo {
+    width: 80%;
+}
+
+.ai,
+.html,
+.css,
+.ui {
+    width: 95%;
+}
+
+.java,
+.js,
+.id,
+.ux {
+    width: 60%;
+}
+
+.c,
+.swift {
+    width: 70%;
+}
+
+.services .services-footer {
+    background-color: black;
+    margin-top: 40px;
+}
+
+.services .services-footer .container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: space-evenly
+}
+
+.services .services-footer .container .card {
+    background-color: white;
+    text-align: center;
+    margin: 30px 0;
+    border-radius: 4px;
+    color: #777;
+}
+
+.services .services-footer .container .card h6 {
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.services .services-footer .container .card p {
+    font-size: 10px;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+}
+
+@media (max-width:767px) {
+    .services .services-footer .container .card p {
+        font-size: 6px;
+    }
+}
+
+/* end services */
+/* start portfolio */
+/* .portfolio .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+} */
+
+.portfolio .portfolio-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.portfolio .portfolio-header .text {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: -21px 0;
+}
+
+.portfolio .galry {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, auto));
+    gap: 10px;
+    justify-content: space-evenly;
+    margin-top: 110px;
+    filter: grayscale();
+}
+
+.portfolio .galry div {
+    background-color: red;
+    height: 200px;
+}
+
+.portfolio .galry .one {
+    background-image: url('/imge/auto-g77af53935_640.jpg');
+    background-size: cover;
+
+}
+
+.portfolio .galry .two {
+    background-image: url('/imge/brushes-gcb69f31c1_640.jpg');
+    background-size: cover;
+}
+
+.portfolio .galry .three {
+    background-image: url('/imge/cog-wheels-g9c1e17a6a_640.jpg');
+    background-size: cover;
+}
+
+.portfolio .galry .four {
+    background-image: url('/imge/brushes-gcb69f31c1_640.jpg');
+    background-size: cover;
+}
+
+.portfolio .galry .five {
+    background-image: url('/imge/electric-g34762dc79_640.jpg');
+    background-size: cover;
+}
+
+.portfolio .galry .six {
+    background-image: url('/imge/jewelry-manufacturing-gb458e329f_640.jpg');
+    background-size: cover;
+}
+
+.portfolio .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 86px 0;
+}
+
+.portfolio .btn a {
+    text-decoration: none;
+    background-color: var(--manin-color);
+    color: black;
+    padding: 16px 23px 21px 36px;
+}
+
+.portfolio .portfolio-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.portfolio .portfolio-footer a {
+    margin: 144px 0;
+    text-decoration: none;
+    border: solid 2px var(--manin-color);
+    color: var(--manin-color);
+    padding: 33px 47px;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+}
+
+/* end portfolio */
+/* start our team */
+.ourteam {
+    position: relative;
+}
+
+.ourteam .container .team {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.ourteam .container .team {
+    margin-top: 88px;
+
+}
+
+.ourteam .container .team .col {
+    box-shadow: 0 0 5px 1px black;
+}
+
+.ourteam .container .team .col .imge img {
+    width: 100%;
+    filter: grayscale();
+}
+
+.ourteam .container .team .col .imge h4 {
+    text-align: center;
+    background-color: var(--manin-color);
+    margin: -4px 0 0 0;
+    padding: 25px 0;
+
+}
+
+.ourteam .container .team .col .title p {
+    font-size: 13px;
+    color: #777;
+    background-color: white;
+    margin: 0;
+    text-align: center;
+    padding: 27px
+}
+
+.aboutus {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    margin-top: 88px;
+    height: 585px;
+}
+
+.aboutus .col .one {
+    background-color: black;
+    padding: 30px 30px 45px 30px;
+    color: white;
+    font-size: 17px;
+    margin-bottom: 50px;
+    /* height: 70%; */
+}
+
+.aboutus .col .two p {
+    text-align: center;
+}
+
+.aboutus .col .three p {
+    text-align: center;
+}
+
+.aboutus .col .three h5 {
+    text-align: end;
+}
+
+.aboutus .col .four {
+    background-color: black;
+    padding: 30px 30px 30px 30px;
+    color: white;
+    font-size: 17px;
+    margin-top: 50px;
+    /* height: 70%; */
+}
+
+.ourteam::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    background-color: var(--manin-color);
+    height: 220px;
+    bottom: 150px;
+    z-index: -1;
+}
+
+/* end our team */
+/* start footer */
+.footer {
+    background-color: black;
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    /* align-items: end; */
+}
+
+.footer .container .col {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.footer .container .col a {
+    color: white;
+    display: block;
+    margin-bottom: 12px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer .container .col p {
+    color: white;
+    font-size: 10px;
+}
+
+.footer .container .col:first-of-type p:first-of-type {
+    margin-bottom: 30px;
+}
+
+.footer .container .col:last-of-type a:nth-child(3) {
+
+    background-color: var(--manin-color);
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.footer .container .col p span {
+    color: var(--manin-color);
+}
+
+/* end footer */

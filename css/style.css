@@ -71,7 +71,7 @@ body {
 }
 
 .header {
-    background-image: url("imge\airplane-g1958c4ad8_1920.jpg");
+    background-image: url("../imge/airplane-g1958c4ad8_1920.jpg");
     background-size: cover;
     height: 100vh;
     position: relative;

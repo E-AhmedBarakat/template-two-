@@ -71,7 +71,7 @@ body {
 }
 
 .header {
-    background-image: url("/imge/airplane-g1958c4ad8_1920.jpg");
+    background-image: url("imge/airplane-g1958c4ad8_1920.jpg");
     background-size: cover;
     height: 100vh;
     position: relative;
@@ -371,33 +371,33 @@ body {
 }
 
 .portfolio .galry .one {
-    background-image: url('/imge/auto-g77af53935_640.jpg');
+    background-image: url('imge/auto-g77af53935_640.jpg');
     background-size: cover;
 
 }
 
 .portfolio .galry .two {
-    background-image: url('/imge/brushes-gcb69f31c1_640.jpg');
+    background-image: url('imge/brushes-gcb69f31c1_640.jpg');
     background-size: cover;
 }
 
 .portfolio .galry .three {
-    background-image: url('/imge/cog-wheels-g9c1e17a6a_640.jpg');
+    background-image: url('imge/cog-wheels-g9c1e17a6a_640.jpg');
     background-size: cover;
 }
 
 .portfolio .galry .four {
-    background-image: url('/imge/brushes-gcb69f31c1_640.jpg');
+    background-image: url('imge/brushes-gcb69f31c1_640.jpg');
     background-size: cover;
 }
 
 .portfolio .galry .five {
-    background-image: url('/imge/electric-g34762dc79_640.jpg');
+    background-image: url('imge/electric-g34762dc79_640.jpg');
     background-size: cover;
 }
 
 .portfolio .galry .six {
-    background-image: url('/imge/jewelry-manufacturing-gb458e329f_640.jpg');
+    background-image: url('imge/jewelry-manufacturing-gb458e329f_640.jpg');
     background-size: cover;
 }
 

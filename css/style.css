@@ -477,10 +477,9 @@ body {
 
 .aboutus {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns:repeat(auto-fill, minmax(400px, 1fr));
     gap: 20px;
     margin-top: 88px;
-    height: 585px;
 }
 
 .aboutus .col .one {
